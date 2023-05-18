@@ -21,4 +21,16 @@
       screen.value += userInput;
     });
   });
+  // second functionality
+  equal.addEventListener("click", function (e) {
+    if (screen.value === "") {
+      screen.value = "";
+      console.log("equal button clicked");
+    } else {
+      // eval evaluate mathmatical operation
+      let answer = eval(screen.value);
+
+      screen.value = answer;
+    }
+  });
 })();
