@@ -9,4 +9,16 @@
   let buttons = document.querySelectorAll(".btn");
   let clear = document.querySelector(".btn-clear");
   let equal = document.querySelector(".btn-equal");
+
+  // console.log(screen);
+  console.log(buttons);
+  // console.log(clear);
+  // console.log(equal);
+  //first functionality
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function (e) {
+      let userInput = e.target.dataset.num;
+      screen.value += userInput;
+    });
+  });
 })();
