@@ -33,4 +33,11 @@
       screen.value = answer;
     }
   });
+
+  // third functionality
+
+  clear.addEventListener("click", function (e) {
+    screen.value = "";
+    console.log("clear button clicked");
+  });
 })();
